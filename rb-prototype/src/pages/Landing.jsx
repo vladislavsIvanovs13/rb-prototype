@@ -1,9 +1,7 @@
 import Slot from "../components/Slot"
 import greyBackground from '../assets/Input.png'
-import buttonMeklet from '../assets/ButtonMeklet.png'
 import rectangle3 from '../assets/rectangle_3.png'
-import '../styles/slot.css'
-import '../styles/footer.css'
+import '../styles/Landing.css'
 
 function Landing() {
     const slots = [
@@ -19,12 +17,15 @@ function Landing() {
             <div>
                 <form onSubmit={searchSlots}>
                     <input type="text" placeholder="No"/>
-                    <button type="submit">
-                        <img src={buttonMeklet}/>
-                    </button>
+                    <button type="submit" className="button-style">Meklēt</button>
                 </form>
-                <img src={greyBackground} className="slot-style"/>
-                {slots.map(slot => <Slot slot={slot} key={slot.id}/>)}
+                <text>Izvēlieties biļetes braucieniem uz Latviju, Lietuvu un Igauniju!</text>
+                <div>
+                    <img src={greyBackground} className="background-style"/>
+                    <div>
+                        {slots.map(slot => <Slot slot={slot} key={slot.id}/>)}
+                    </div>
+                </div>
                 <footer>
                     <img src={rectangle3} className="footer-style"/>
                 </footer>

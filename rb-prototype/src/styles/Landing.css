@@ -1,0 +1,21 @@
+.info-text {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: bold;
+}
+
+.footer-style {
+    width: 100%;
+}
+
+.background-style {
+    width: 97%;
+    padding: 20px;
+}
+
+.button-style {
+    border-radius: 8px;
+    background-color: #2543a9;
+    color: white
+}
+  
