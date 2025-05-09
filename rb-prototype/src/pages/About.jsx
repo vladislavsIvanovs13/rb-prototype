@@ -1,4 +1,4 @@
-import rectangle3 from '../assets/rectangle_3.png'
+import rectangle from '../assets/rectangle_3.png'
 
 function About() { 
     return (

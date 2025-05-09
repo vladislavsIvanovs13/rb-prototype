@@ -8,14 +8,98 @@
     width: 100%;
 }
 
+.background {
+    position: relative;
+}
+
+.left-form {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.date-form {
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 10%;
+}
+
+.right-form {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 40%;
+}
+
+.time-form {
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 40%;
+}
+
+.arrow {
+    position: absolute;
+    margin-top: 3.7%;
+    margin-left: 32.75%;
+}
+
+.input {
+    height: 35px;
+    text-align: center;
+    font-size: large;
+}
+
+.text {
+    position: relative;
+    left: 35px;
+}
+
 .background-style {
-    width: 97%;
-    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 30px;
 }
 
 .button-style {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 70%;
     border-radius: 8px;
     background-color: #2543a9;
-    color: white
+    color: white;
+    width: 120px;
+}
+
+.icon-button {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    margin-top: 30px;
+}
+
+.plus-button {
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 70%;
+    border-radius: 8px;
+    background-color: #2543a9;
+    color: white;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+}
+
+.minus-button {
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 77.2%;
+    border-radius: 8px;
+    background-color: #2543a9;
+    color: white;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
 }
   

@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom'
 import '../styles/NavBar.css'
-import Grozs from '../assets/ButtonGrozs.png'
+import rbLogo from '../assets/rbLogo.png'
 
 function NavBar() {
-    return <nav>
-        <div className='navbar'>
+    return <nav className='navbar'>
+        <img src={rbLogo} className='logo'/>
+        <div className='navbar-buttons'>
             <Link to="/" className='nav-link'>Uz sākumu</Link>
             <Link to="/about" className='nav-link'>Par mums</Link>
             <button className='button'>

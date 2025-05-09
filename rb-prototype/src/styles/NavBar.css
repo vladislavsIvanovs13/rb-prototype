@@ -1,9 +1,14 @@
 .navbar {
-  justify-content: flex-end;
-  gap: 60px;
-  padding: 1rem 2rem;
   display: flex;
+  padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-left: auto;
 }
 
 .nav-link {
@@ -12,6 +17,10 @@
   border-radius: 4px;
   transition: background-color 0.2s;
   color: black;
+}
+
+.nav-link:hover {
+  color: #2543a9;
 }
 
 .nav-link-grozs {
@@ -28,6 +37,12 @@
 
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+  height: 100%;
+  object-fit: contain;
+  height: 35px;
 }
 
 @media (max-width: 768px) {
