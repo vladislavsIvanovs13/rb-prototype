@@ -9,6 +9,7 @@ import '../styles/About.css'
 import att1 from '../assets/att1.png'
 import att2 from '../assets/att2.png'
 import att3 from '../assets/att3.png'
+import Footer from '../components/Footer'
 
 function About() {
     return (
@@ -55,17 +56,7 @@ function About() {
                 <div >
                     <img src={att3} className='imgCenter' />
                 </div>
-                <div>
-                    <img src={divider} className="background-style"></img>
-                    <footer>
-                        <img src={rbLogo} className='logo' />
-                        <button className="icon-button"><img src={facebookIcon} /></button>
-                        <button className="icon-button"><img src={linkedInIcon} /></button>
-                        <button className="icon-button"><img src={youTubeIcon} /></button>
-                        <button className="icon-button"><img src={instagramIcon} /></button>
-                        <img src={rectangle} className="footer-style" />
-                    </footer>
-                </div>
+                <Footer/>
             </div>
         </>
     )
