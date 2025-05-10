@@ -1,0 +1,33 @@
+.background-style {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 30px;
+}
+
+.footer-logo {
+    height: 100%;
+    object-fit: contain;
+    height: 35px;
+    margin-left: 2.25%;
+    margin-top: 30px;
+}
+
+.icon-button {
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.footer-style {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.logo-group {
+    position: absolute;
+    margin-left: 14%;
+    margin-top: 2.6%;
+}

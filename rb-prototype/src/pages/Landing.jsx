@@ -5,6 +5,7 @@ import calendar from '../assets/calendar.png'
 import clock from '../assets/time.png'
 import '../styles/Landing.css'
 import Footer from "../components/Footer"
+import { useState } from "react"
 
 function Landing() {
     const slots = [
@@ -13,6 +14,9 @@ function Landing() {
         {id: 3, time: "20:30-21:50", route: "Rīga-Viļņa", price: 19.79}
     ]
 
+    const [count, setCount] = useState(0)
+    const inc = () => setCount(count => ++count)
+    const dec = () => setCount(count => count > 0 ? --count : 0)
     const searchSlots = () => {}
     
     return (
@@ -36,8 +40,15 @@ function Landing() {
                         <input type="text" placeholder="Laiks" className="input-lower"/>
                     </form>
                     <button type="button" className="button-style">Meklēt</button>
-                    <button type="button" className="plus-button">+</button>
-                    <button type="button" className="minus-button">-</button>
+                    <button onClick={inc} type="button" className="plus-button">
+                        <span className="sign">+</span>
+                    </button>
+                    <form className="counter-form">
+                        <input type="text" value={count} className="input-counter"/>
+                    </form>
+                    <button onClick={dec} type="button" className="minus-button">
+                        <span className="sign">-</span>
+                    </button>
                     <img src={greyBackground} className="background-style"/>
                 </div>
                 {/* {slots.map(slot => 
