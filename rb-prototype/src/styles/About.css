@@ -1,0 +1,78 @@
+.divParMums {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 130px;
+    margin-bottom: 50px;
+}
+
+.textLargest {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.divTextWhite {
+    margin-left: 130px;
+    padding-right: 30px;
+    margin-bottom: 15%;
+}
+
+.textWhite {
+    font-size: 25px;
+    text-align: center;
+}
+
+.divImgRight {
+    position: absolute;
+    right: 10%;
+}
+
+.imgRight {
+    width: 100%;
+}
+
+div.divVert {
+    width: 100%;
+    overflow: auto;
+}
+
+div.divVert div {
+    width: 33%;
+    float: left;
+}
+
+.imgCenter {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 70px;
+}
+
+.divVirsraksts {
+    margin-top: 150px;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.virsraksts {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.divTeksts {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.teksts {
+    font-size: 30px;
+}
+
+.background-style {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 30px;
+}
