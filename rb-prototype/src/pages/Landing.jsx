@@ -8,6 +8,8 @@ import youTubeIcon from '../assets/YouTubeIcon.png'
 import rbLogo from '../assets/rbLogo.png'
 import divider from '../assets/Divider.png'
 import arrow from '../assets/Bultina.png'
+import calendar from '../assets/calendar.png'
+import clock from '../assets/time.png'
 import '../styles/Landing.css'
 
 function Landing() {
@@ -31,11 +33,13 @@ function Landing() {
                     <form className="right-form">
                         <input type="text" placeholder="Uz" className="input"/>
                     </form>
+                    <img src={calendar} className="calendar"/>
                     <form className="date-form">
-                        <input type="text" placeholder="Datums" className="input"/>
+                        <input type="text" placeholder="Datums" className="input-lower"/>
                     </form>
+                    <img src={clock} className="clock"/>
                     <form className="time-form">
-                        <input type="text" placeholder="Laiks" className="input"/>
+                        <input type="text" placeholder="Laiks" className="input-lower"/>
                     </form>
                     <button type="button" className="button-style">Meklēt</button>
                     <button type="button" className="plus-button">+</button>
@@ -51,7 +55,7 @@ function Landing() {
         
                 <img src={divider} className="background-style"></img>
                 <footer>
-                    <img src={rbLogo} className='logo'/>
+                    <img src={rbLogo} className='footer-logo'/>
                     <button className="icon-button"><img src={facebookIcon}/></button>
                     <button className="icon-button"><img src={linkedInIcon}/></button>
                     <button className="icon-button"><img src={youTubeIcon}/></button>
