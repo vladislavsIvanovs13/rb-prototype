@@ -38,7 +38,7 @@ function Landing() {
     return (
         <>
             <div>
-                <text className="text">Izvēlieties biļetes braucieniem uz Latviju, Lietuvu un Igauniju!</text>
+                <span className="info-text">Izvēlieties biļetes braucieniem uz Latviju, Lietuvu un Igauniju!</span>
                 <div className="background">
                     <form className="left-form" onSubmit={(e) => e.preventDefault()}>
                         <input type="text" onChange={(e) => setFrom(e.target.value)} onKeyDown={handleEnter}

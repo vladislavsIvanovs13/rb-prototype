@@ -1,7 +1,7 @@
 .info-text {
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: bold;
+    position: relative;
+    left: 35px;
+    font-size: large;
 }
 
 .background {
