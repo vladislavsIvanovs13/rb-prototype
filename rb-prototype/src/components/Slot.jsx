@@ -12,12 +12,14 @@ function Slot({slot}) {
         if (clickedSecond)
             setClickedSecond(false)
         setClickedFirst(!clickedFirst)
+        localStorage.setItem('clickedFirst', clickedFirst)
     }
 
     const handleClickSecond = () => {
         if (clickedFirst)
             setClickedFirst(false)
         setClickedSecond(!clickedSecond)
+        localStorage.setItem('clickedSecond', clickedSecond)
     }
 
     const navigateToBasket = (slot) => {

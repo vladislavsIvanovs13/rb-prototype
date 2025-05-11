@@ -1,0 +1,133 @@
+.containerGrey {
+    margin-top: 2%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 7%;
+    background-color: #E0E0E0;
+    border-radius: 8px;
+    padding-top: 30px;
+}
+
+.textGrozs {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 48px;
+    margin-bottom: 15px;
+}
+
+.containerWhite {
+    height: 150px;
+    width: 91%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 6%;
+}
+
+.textRight {
+    font-size: 20px;
+    text-align: center;
+    border: black 1px;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 52%;
+}
+
+div.vert {
+    width: 100%;
+    overflow: auto;
+}
+
+div.vert-low {
+    width: 100%;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+div.vert div {
+    width: 70%;
+    float: left;
+}
+
+.editButton {
+    margin-top: 12px;
+    margin-left: 93%;
+}
+
+.textGrey {
+    color: #585858;
+    margin-left: 1%;
+}
+
+.pirmKlase {
+    position: absolute;
+    margin-left: 47%;
+    width: 100px;
+    border-radius: 8px;
+    background-color: #2543a9;
+    color: white;
+}
+
+.otrKlase {
+    position: absolute;
+    margin-left: 47%;
+    width: 100px;
+    border-radius: 8px;
+    background-color: white;
+    color: #2543a9;
+    border-color: #2543a9;
+}
+
+.pirmKlase-right {
+    position: absolute;
+    margin-left: 56%;
+    width: 100px;
+    border-radius: 8px;
+    background-color: #2543a9;
+    color: white;
+}
+
+.otrKlase-right {
+    position: absolute;
+    margin-left: 56%;
+    width: 100px;
+    border-radius: 8px;
+    background-color: white;
+    color: #2543a9;
+    border-color: #2543a9;
+}
+
+.bin-icon {
+    position: absolute;
+    margin-left: 78%;
+    padding: 0px;
+    border: none;
+}
+
+.ievaditApmKodu {
+    margin-left: 50px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.textApmaksai {
+    position: absolute;
+    right: 20%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.textPrice {
+    position: absolute;
+    right: 8.2%;
+    font-size: 33px;
+}

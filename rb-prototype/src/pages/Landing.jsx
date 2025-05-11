@@ -11,7 +11,8 @@ function Landing() {
     const slots = [
         {id: 1, date: "2025-05-31", time: "10:35-11:10", route: "Rīga-Viļņa", price: 12.35},
         {id: 2, date: "2025-06-12", time: "16:30-17:35", route: "Rīga-Viļņa", price: 21.99},
-        {id: 3, date: "2025-06-12", time: "20:30-21:50", route: "Rīga-Viļņa", price: 19.79}
+        {id: 3, date: "2025-06-12", time: "20:30-21:50", route: "Rīga-Viļņa", price: 19.79},
+        {id: 4, date: "2025-06-16", time: "10:30-14:50", route: "Viļņa-Varšava", price: 43.67}
     ]
 
     const [matchingSlots, setMatchingSlots] = useState([]);
