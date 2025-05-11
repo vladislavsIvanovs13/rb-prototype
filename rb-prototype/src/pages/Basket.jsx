@@ -1,16 +1,17 @@
 import { useEffect } from 'react'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import rectangle from '../assets/rectangle_3.png'
 import edit from '../assets/edit.png'
 import '../styles/Basket.css'
-import pirmKlase from '../assets/1klaseZila.png'
-import otrKlase from '../assets/2klasePeleka.png'
 import bin from '../assets/bin.png'
 import ievaditAtlKodu from '../assets/ButtonIevaditAtlaidesKodu.png'
 import apmaksat from '../assets/ButtonApmaksat.png'
 import Footer from '../components/Footer'
 
 function Basket() { 
+    const navigate = useNavigate()
+    
     const [slot, setSlot] = useState(null);
     const [loading, setLoading] = useState(true)
     const [total, setTotal] = useState(0.0)
@@ -31,9 +32,16 @@ function Basket() {
     }
 
     useEffect(() => {
+        redirect()
         getBasketContents()
         calculateTotal()
     }, [])
+
+    const redirect = () => {
+        const registered = localStorage.getItem('registered')
+        if (!registered)
+            navigate('/register')
+    }
 
     const getBasketContents = () => {
         const selected = localStorage.getItem('selectedSlot')
@@ -45,8 +53,8 @@ function Basket() {
 
     const calculateTotal = () => {
         if (slot) {
-            total = slot.reduce((t, s) => t + s.price, 0.0)
-            setTotal(total)
+            const sum = slot.reduce((t, s) => t + s.price, 0.0)
+            setTotal(sum)
         }
     }
 
