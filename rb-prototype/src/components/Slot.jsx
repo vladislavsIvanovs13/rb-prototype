@@ -1,10 +1,12 @@
 import greyBackground from '../assets/Input.png'
 import "../styles/Slot.css"
 import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
 
 function Slot({slot}) {
     const [clickedFirst, setClickedFirst] = useState(false)
     const [clickedSecond, setClickedSecond] = useState(false)
+    const navigate = useNavigate()
 
     const handleClickFirst = () => {
         if (clickedSecond)
@@ -18,8 +20,9 @@ function Slot({slot}) {
         setClickedSecond(!clickedSecond)
     }
 
-    const navigateToBasket = () => {
-
+    const navigateToBasket = (slot) => {
+        localStorage.setItem('selectedSlot', JSON.stringify(slot));
+        navigate('/basket')
     }
 
     return (
@@ -35,7 +38,7 @@ function Slot({slot}) {
                             <th><button type="button" onClick={handleClickSecond}
                                 className={`${clickedSecond ? 'second-class-blue' : 'second-class-white'}`}>2.klase</button></th>
                             <th className='th-shift'>€ {slot.price}</th>
-                            <th><button type="button" onClick={navigateToBasket}
+                            <th><button type="button" onClick={() => navigateToBasket(slot)}
                                 className="first-class-blue">Izvēlēties</button></th>
                         </tr>
                     </table>
