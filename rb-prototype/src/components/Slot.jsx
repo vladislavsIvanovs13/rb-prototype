@@ -1,14 +1,46 @@
+import greyBackground from '../assets/Input.png'
+import "../styles/Slot.css"
+import { useState } from "react"
+
 function Slot({slot}) {
+    const [clickedFirst, setClickedFirst] = useState(false)
+    const [clickedSecond, setClickedSecond] = useState(false)
+
+    const handleClickFirst = () => {
+        if (clickedSecond)
+            setClickedSecond(false)
+        setClickedFirst(!clickedFirst)
+    }
+
+    const handleClickSecond = () => {
+        if (clickedFirst)
+            setClickedFirst(false)
+        setClickedSecond(!clickedSecond)
+    }
+
+    const navigateToBasket = () => {
+
+    }
+
     return (
         <>
-            <div className="slot">
-                <table>
-                    <tr>
-                        <td><h3>{slot.time}</h3></td>
-                        <td><h3>{slot.route}</h3></td>
-                        <td><h3>€ {slot.price}</h3></td>
-                    </tr>
-                </table>
+            <div>
+                <div className='slot'>
+                    <table className='slot-row'>
+                        <tr>
+                            <th className='th-shift'>{slot.time}</th>
+                            <th className='th-shift'>{slot.route}</th>
+                            <th><button type="button" onClick={handleClickFirst}
+                                className={`${clickedFirst ? 'first-class-blue' : 'first-class-white'}`}>1.klase</button></th>
+                            <th><button type="button" onClick={handleClickSecond}
+                                className={`${clickedSecond ? 'second-class-blue' : 'second-class-white'}`}>2.klase</button></th>
+                            <th className='th-shift'>€ {slot.price}</th>
+                            <th><button type="button" onClick={navigateToBasket}
+                                className="first-class-blue">Izvēlēties</button></th>
+                        </tr>
+                    </table>
+                    <img src={greyBackground} className="background-slot"/>
+                </div>
             </div>
         </>
     )
